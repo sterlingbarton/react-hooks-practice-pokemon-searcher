@@ -1342,17 +1342,6 @@
       }
     },
     {
-      "id": 151,
-      "name": "",
-      "hp": "",
-      "sprites": {
-        "front": "",
-        "back": ""
-      },
-      "frontUrl": "J",
-      "backUrl": "b"
-    },
-    {
       "id": 152,
       "name": "Bulbasaur",
       "hp": "40",

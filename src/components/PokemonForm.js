@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Form } from "semantic-ui-react";
 
-function PokemonForm() {
+function PokemonForm({pokemonList, setPokemonList}) {
   const [formData, setFormData] = useState({
     id: '',
     name: '',
@@ -31,7 +31,7 @@ function PokemonForm() {
     },body: JSON.stringify(formData)
   })
     .then(r => r.json())
-    .then(data => console.log(data))
+    .then(data => setPokemonList({...pokemonList, data}))
   }
 
   return (
